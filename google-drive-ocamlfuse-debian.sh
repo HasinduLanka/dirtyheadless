@@ -1,7 +1,5 @@
 #!/bin/bash
 
-mkdir sand
-cd sand
 
 echo "Do not run this in a User Interactive machine. This will break your /bin/xdg-open "
 
