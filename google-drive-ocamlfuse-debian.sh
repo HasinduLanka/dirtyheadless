@@ -17,8 +17,6 @@ mkdir ~/Desktop
 cd "$(dirname "$0")"
 
 cp ./DriveFuse/config ~/.gdfuse/default/config
-cp ./DriveFuse/GoogleDrive.png ~/.gdfuse/GoogleDrive.png
-cp ./DriveFuse/GoogleDriveFuse.desktop ~/Desktop/GoogleDriveFuse.desktop
 
 get_abs_filename() {
   # $1 : relative filename
@@ -47,6 +45,6 @@ read line
 sudo cp /bin/xdg-open /bin/xdg-open.back
 
 sudo bash -c 'echo -e $"#!/bin/sh\necho $* > /dev/stderr" > /bin/xdg-open'
-chmod +x /bin/xdg-open
+sudo chmod +x /bin/xdg-open
 
 echo "You can authorize by running  ~/google-drive-fuse-start.sh "
