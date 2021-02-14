@@ -43,7 +43,7 @@ read line
 
 sudo cp /bin/xdg-open /bin/xdg-open.back
 
-sudo bash -c 'echo -e $"#!/bin/sh\necho $* > /dev/stderr" > /bin/xdg-open'
+sudo bash -c 'echo -e $"#!/bin/sh\necho \$* > /dev/stderr" > /bin/xdg-open'
 sudo chmod +x /bin/xdg-open
 
 echo "You can authorize by running  ~/google-drive-fuse-start.sh "
