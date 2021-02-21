@@ -40,7 +40,7 @@ echo "You can recover your original /bin/xdg-open from /bin/xdg-open.back"
 echo "Press CTRL+C to cancel this"
 read line
 
-
+sudo mkdir -p /bin/
 sudo cp /bin/xdg-open /bin/xdg-open.back
 
 sudo bash -c 'echo -e $"#!/bin/sh\necho \$* > /dev/stderr" > /bin/xdg-open'
